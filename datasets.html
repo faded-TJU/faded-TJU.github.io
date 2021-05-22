@@ -36,6 +36,11 @@
     .w-container {
       max-width: 1100px;
     }
+    .w-richtext .a{
+      font-size: 23px;
+      font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
+      font-weight: bold;
+    }
   </style>
 
 </head>
@@ -83,27 +88,92 @@
   </div>
   <div class="content-section padding-bottom: 15px;">
     <div class="content-wrapper w-container">
-      <div class="flex-wrapper bottom-border">
         <div class="message">
           <div class="title-box no-bottom-border"
-               style="margin-bottom: 10px; padding-bottom: 20px; border-bottom-width: 4px; border-bottom-color: #3898EC;">
+               style="margin-bottom: 20px; padding-bottom: 20px; border-bottom-width: 2px; border-bottom-color: #8f8f8f">
             <div class="title"
                  style="font-size: 50px; color: black; font-family: Arial, sans-serif; font-weight: normal;"
-            >Dataset Overview</div>
+            >Fault Datasets Overview</div>
           </div>
-
-
-          <div class="bio abstract w-richtext">
-            <p>
-              后续补充，敬请期待
-            </p>
-          </div>
-
         </div>
-      </div>
+
+        <div class="flex-wrapper less-bottom-border">
+          <div class="_62-percent-column message">
+            <div class="no-bottom-border">
+              <div class="title"></div>
+            </div>
+            <div class="bio abstract w-richtext">
+              <p>
+                <span class="a">故障诊断数据集 (Datasets for Fault Diagnosis): </span>我们构建了故障数据集用于故障诊断任务，按照故障设备的类型分为：
+                轴承(Bearing)、齿轮(Gear)等；按照故障位置与直径分为外圈(0.007、0.014、0.021、0.028)、内圈(同)、球体(同)等。
+              </p>
+              <a href="./datasets.html" class="text-link">view</a>
+            </div>
+          </div>
+          <div class="_20-percent-column message">
+            <div>
+              <img src="./static/images/PD1.png" alt="" width="400px" height="250px" style="vertical-align: middle;">
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-wrapper less-bottom-border">
+          <div class="_62-percent-column message">
+            <div class="no-bottom-border">
+              <div class="title"></div>
+            </div>
+            <div class="bio abstract w-richtext">
+              <p>
+                <span class="a">故障预测数据集 (Datasets for Fault Prediction): </span>我们构建了故障数据集用于故障预测任务，按照故障设备的类型分为：
+                轴承(Bearing)、齿轮(Gear)等；按照故障位置与直径分为外圈(0.007、0.014、0.021、0.028)、内圈(同)、球体(同)等。
+              </p>
+              <a href="./datasets.html" class="text-link">view</a>
+            </div>
+          </div>
+          <div class="_20-percent-column message">
+            <div>
+              <img src="./static/images/PD1.png" alt="" width="400px" height="250px" style="vertical-align: middle;">
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-wrapper less-bottom-border">
+          <div class="_62-percent-column message">
+            <div class="no-bottom-border">
+              <div class="title"></div>
+            </div>
+            <div class="bio abstract w-richtext">
+              <p>
+                <span class="a">小样本故障数据集 (Datasets for Few-shot Learning): </span>我们构建了故障数据集用于小样本学习任务，按照故障设备的类型分为：
+                轴承(Bearing)、齿轮(Gear)等；按照故障位置与直径分为外圈(0.007、0.014、0.021、0.028)、内圈(同)、球体(同)等。
+              </p>
+              <a href="./datasets.html" class="text-link">view</a>
+            </div>
+          </div>
+          <div class="_20-percent-column message">
+            <div>
+              <img src="./static/images/PD1.png" alt="" width="400px" height="250px" style="vertical-align: middle;">
+            </div>
+          </div>
+        </div>
+
+        <div class="title-box no-bottom-border"
+             style="margin-bottom: 20px; padding-bottom: 20px; border-bottom-width: 4px; border-bottom-color: #3898EC;">
+        </div>
+
+        <div class="title"
+                 style="font-size: 30px; color: black; font-family: Arial, sans-serif; font-weight: bold;"
+            >Contributing datasets</div>
+        <div class="bio abstract w-richtext">
+          <p>
+            OFDB is an on-going community-driven effort and welcomes contribution of datasets from the community.
+            If you are interested, please follow the instructions <a href="./datasets.html" class="text-to">here</a>.
+          </p>
+        </div>
+
     </div>
   </div>
-</div>
+
 
 
   <!-- 底部 -->

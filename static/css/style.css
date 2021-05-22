@@ -3071,7 +3071,7 @@ figcaption {
 }
 
 .flex-wrapper.less-bottom-border {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .flex-wrapper.event {
@@ -4999,7 +4999,7 @@ figcaption {
 .bio.abstract {
   padding-top: 12px;
   font-family: Proximanova, sans-serif;
-  font-size: 18.5px;
+  font-size: 19px;
   line-height: 28px;
   font-weight: 300;
 }
@@ -7597,6 +7597,28 @@ html.w-mod-js *[data-ix="display-none-on-load-4"] {
   }
 }
 
+.text-to {
+  border-bottom: 1px solid #2895f7;
+  -webkit-transition: color 100ms ease, border 100ms ease;
+  transition: color 100ms ease, border 100ms ease;
+  font-family: Proximanova, sans-serif;
+  color: #2895f7;
+  font-size: 19px;
+  /* font-weight: 700; */
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  cursor: pointer;
+}
+
+.text-link:hover {
+  border-bottom-color: #b6b6b6;
+  color: #8f8f8f;
+}
+
+._62-percent-column {
+  position: relative;
+  width: 62%;
+}
 @font-face {
   font-family: 'Proximanova';
   src: url('../font/58db0e2b4c3bf6b731d7537b_ProximaNova-Light.otf') format('opentype');
