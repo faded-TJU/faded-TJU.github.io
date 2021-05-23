@@ -7619,6 +7619,14 @@ html.w-mod-js *[data-ix="display-none-on-load-4"] {
   position: relative;
   width: 62%;
 }
+
+.bio.abstract5px {
+  padding-top: 20px;
+  font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 600;
+}
 @font-face {
   font-family: 'Proximanova';
   src: url('../font/58db0e2b4c3bf6b731d7537b_ProximaNova-Light.otf') format('opentype');
