@@ -7620,6 +7620,11 @@ html.w-mod-js *[data-ix="display-none-on-load-4"] {
   width: 62%;
 }
 
+.content-section-30px {
+  padding-top: 30px;
+  padding-bottom: 72px;
+}
+
 .bio.abstract5px {
   padding-top: 20px;
   font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;

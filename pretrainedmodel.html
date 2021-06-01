@@ -36,6 +36,16 @@
     .w-container {
       max-width: 1100px;
     }
+    .w-richtext .a{
+      font-size: 23px;
+      font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
+      font-weight: bold;
+    }
+    .w-richtext .b{
+      font-size: 30px;
+      font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
+      font-weight: bold;
+    }
   </style>
 
 </head>
@@ -81,30 +91,345 @@
       </nav>
     </div>
   </div>
-  <div class="content-section padding-bottom: 15px;">
+  <div class="content-section-30px">
     <div class="content-wrapper w-container">
-      <div class="message">
-        <div class="title-box no-bottom-border"
-             style="margin-bottom: 10px; padding-bottom: 20px; border-bottom-width: 4px; border-bottom-color: #3898EC; width: 100%">
-          <div class="title"
-               style="font-size: 50px; color: black; font-family: Arial, sans-serif; font-weight: normal;"
-          >Pre-trained Model</div>
+      <div class="title-box no-bottom-border more-pubs-heading">
+        <div class="title" style="font-size: 35px">故障诊断预训练模型 (Pre-trained Models for Fault Diagnosis)</div>
+      </div>
+        <div class="flex-wrapper bottom-border">
+          <div class="_62-percent-column message">
+            <div class="no-bottom-border">
+              <div class="title"></div>
+            </div>
+            <div class="bio abstract w-richtext">
+              <p>
+                <span class="b">大样本故障诊断: </span>描述。
+              </p>
+              <a href="./datasets.html" class="text-link">view</a>
+            </div>
+          </div>
+
+          <div class="_60-percent-column message">
+            <div class="no-bottom-border">
+              <div class="title"></div>
+            </div>
+            <div class="bio abstract w-richtext">
+              <p>
+                <span class="a">1. 基于深度迁移卷积神经网络的在线故障诊断方法: </span>将轴承一维振动信号通过堆叠转换为2-D灰度图像，作为
+                CNN网络的输入；初始化并预训练离线CNN网络，并将其训练好的卷积核迁移至在线CNN的浅层进行初始化，再经过训练微调，得到最终训练好的
+                模型。模型输出10类故障类型判别。
+              </p>
+              <a href="./datasets.html" class="text-link">view</a>
+            </div>
+          </div>
+          <div class="_40-percent-column message">
+            <div>
+              <img src="./static/images/diagnosis01.png" alt="" width="500px" height="280px" style="vertical-align: middle;">
+            </div>
+          </div>
         </div>
 
-        <div class="bio abstract w-richtext"
-             style="font-size: 30px; font-family: Arial, sans-serif; font-weight: normal;"
-        >Overview</div>
-        <div class="title-box no-bottom-border"
-             style="margin-bottom: 10px; padding-bottom: 20px; border-bottom-width: 4px; border-bottom-color: #3898EC;">
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">2. 基于深度迁移卷积网络的故障诊断方法: </span>将发动机轴承一维振动数据同通过堆叠转换为32*32的2-D灰度图
+                  像，作为本方法提出的两个CNN网络的输入；通过源数据集训练第一个CNN网络，并将训练好的参数迁移到第二个CNN网络，然后通过目标数据集
+                  训练第二个网络并进行微调，得到最终训练好的模型。模型输出10类故障类型判别。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="./static/images/diagnosis02.png" alt="" width="500px" height="180px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">3. 基于深度卷积神经网络和随机森林集成学习: </span>将源振动信号数据通过连续小波变换和标准化得到的灰度图像
+                  作为CNN输入，训练并进行多层次特征提取，将训练好的第2、4层和全连接层的特征作为随机森林分类器的输入，分别得到3个分类器对应的诊断
+                  结果输出；最后使用集成学习方法，利用“赢者通吃”策略整合三个输出，得到最终结果。模型输出10类故障类型判别。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="./static/images/diagnosis03.png" alt="" width="400px" height="280px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">4. 基于LeNet-5网络的跨域轴承故障诊断: </span>将从不同数据集中收集的一维故障信号数据通过规范化和滑动窗口
+                  取样，得到规范后的一维数据作为模型的输入；基于LeNet-5构建一维卷积神经网络模型，将预处理后的一维时间序列数据分批输入模型中进行
+                  训练，最终得到模型。模型输出58类故障类型判别结果。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="./static/images/diagnosis04.png" alt="" width="500px" height="280px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">5. 基于GAP-CNN的轴承故障诊断方法: </span>将源一维振动信号进行采样和标准化处理转化为二维32*32的灰度图像
+                  作为模型输入；改进了LeNet5网络结构，使用全局平均池化（GAP）层代替全连接层，Soft-max分类层代替高斯连接分类层，并引入批归一化
+                  技术增强模型泛化能力。模型输出10类故障类型判别结果。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="./static/images/diagnosis05.png" alt="" width="500px" height="210px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">6. 基于DenseNet网络架构迁移学习故障诊断方法: </span>将一维振动信号通过连续小波变换（CWT）转化为每段
+                  1024*1024时频谱图，再进行标准化和压缩得到224*224灰度图像作为模型输入；基于DenseNet架构构建模型，通过特征提取和和参数迁移
+                  ，以及训练和微调得到最终模型。模型输出10类故障类型判别结果。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="./static/images/diagnosis06.png" alt="" width="500px" height="230px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">7. 基于ResNet网络架构迁移学习故障诊断方法: </span>将一维振动信号通过连续小波变换（CWT）转化为每段
+                  1024*1024时频谱图，再进行标准化和压缩得到224*224灰度图像作为模型输入；基于ResNet架构构建模型，通过特征提取和和参数迁移，以
+                  及训练和微调得到最终模型。模型输出10类故障类型判别结果。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="./static/images/diagnosis07.png" alt="" width="500px" height="280px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">8. 基于迁移VGG-16模型的轴承故障诊断方法: </span>将源故障信号通过堆叠变换为224*224的灰度图像，复制叠加
+                  3个通道作为CNN的输入；构建VGG-16卷积神经网络模型，将第一个模型中通过自然图像预训练后得到的参数迁移到第二个模型中，并使用任务
+                  图像进行训练微调，得到最终模型和结果。模型输出10类故障类型判别结果。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="./static/images/diagnosis08.png" alt="" width="500px" height="220px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+          <div class="_62-percent-column message">
+            <div class="no-bottom-border">
+              <div class="title"></div>
+            </div>
+            <div class="bio abstract w-richtext">
+              <p>
+                <span class="b">小样本故障诊断: </span>描述。
+              </p>
+              <a href="./datasets.html" class="text-link">view</a>
+            </div>
+          </div>
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">1. 基于双图网络的小样本轴承故障诊断方法: </span>将源故障信号数据通过堆叠变换、复制叠加3个通道作为网络
+                  的输入；采用ResNet12代替ConvNet提高了精度，双图网络（Dual Graph Network）相比于一般图网络提高了标签的传播和转导效率，在
+                  小样本下无需重新训练实现分类。模型输出16类故障类型判别结果。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="./static/images/fewshotdiagnosis01.png" alt="" width="500px" height="240px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">2. 基于卷积模型迁移的小样本轴承故障诊断方法: </span>将从机械设备中采集的少量源信号通过归一化的数据处理手
+                  段，将一维振动信号压缩至0-1区间内，利用滑动窗口的方式将源信号处理成多个样本。将处理后的样本输入至已训练的模型（如LeNet-5）中
+                  ，微调模型参数后，再将测试集样本输入模型，得到小样本工况下的数据故障类别。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="./static/images/fewshotdiagnosis02.png" alt="" width="500px" height="280px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-wrapper bottom-border">
+            <div class="_60-percent-column message">
+              <div class="no-bottom-border">
+                <div class="title"></div>
+              </div>
+              <div class="bio abstract w-richtext">
+                <p>
+                  <span class="a">3. 基于GAN网络的不平衡样本轴承故障诊断方法: </span>将从机械设备中采集的源信号通过归一化的数据处理手段
+                  ，将一维振动信号压缩至0-1区间内。采集的源信号不同类别间数量差距较大，利用GAN网络处理不平衡样本。输入随机样本至生成器网络中，生
+                  成器网络输出的fake样本与real样本同时输入至辨别器网络，反向传播更新网络参数，获取最终生成的类似真实的fake样本，得到平衡样本集
+                  。再利用普通诊断网络对原样本做出诊断，得到故障类别。
+                </p>
+                <a href="./datasets.html" class="text-link">view</a>
+              </div>
+            </div>
+            <div class="_40-percent-column message">
+              <div>
+                <img src="#" alt="" width="500px" height="230px" style="vertical-align: middle;">
+              </div>
+            </div>
+          </div>
+
+        <div class="flex-wrapper bottom-border">
+          <div class="_60-percent-column message">
+            <div class="no-bottom-border">
+              <div class="title"></div>
+            </div>
+            <div class="bio abstract w-richtext">
+              <p>
+                <span class="a">4. 基于DCWGAN的无样本轴承故障诊断方法: </span>将源一维振动信号经过采样和标准化处理转换为32*32的灰度图
+                像作为模型的输入；借鉴生成对抗网络（GAN）的思想，通过源域的有标签样本与目标域的无标签样本的对抗训练，完成彼此间的领域自适应，最
+                终可以利用从有标签样本集中学习到的知识，对无标签样本进行故障诊断。模型输出10类故障类型判别结果。
+              </p>
+              <a href="./datasets.html" class="text-link">view</a>
+            </div>
+          </div>
+          <div class="_40-percent-column message">
+            <div>
+              <img src="./static/images/fewshotdiagnosis04.png" alt="" width="500px" height="220px" style="vertical-align: middle;">
+            </div>
+          </div>
         </div>
 
+        <div class="flex-wrapper bottom-border">
+          <div class="_60-percent-column message">
+            <div class="no-bottom-border">
+              <div class="title"></div>
+            </div>
+            <div class="bio abstract w-richtext">
+              <p>
+                <span class="a">5. 弱监督与无监督条件下基于压缩 UDA 模型的跨域故障诊断方法: </span>将一维振动信号经过采样和标准化处理转
+                换为224*224的图像，复制叠加三个通道作为CNN的输入；建立迁移 VGG-16 CNN 模型用于故障诊断以解决标记数据不足的问题；最后，在此
+                基础上，进一步建立基于 VGG-16 CNN 与 MMD 的压缩 UDA 模型，实现高效故障诊断。模型输出10类故障判别结果。
+              </p>
+              <a href="./datasets.html" class="text-link">view</a>
+            </div>
+          </div>
+          <div class="_40-percent-column message">
+            <div>
+              <img src="./static/images/fewshotdiagnosis05.png" alt="" width="500px" height="200px" style="vertical-align: middle;">
+            </div>
+          </div>
+        </div>
+
+      <div class="title-box no-bottom-border more-pubs-heading">
+        <div class="title" style="font-size: 35px">故障预测预训练模型 (Pre-trained Models for Fault Prediction)</div>
+      </div>
+        <div class="flex-wrapper bottom-border">
+          <div class="_60-percent-column message">
+            <div class="no-bottom-border">
+              <div class="title"></div>
+            </div>
+            <div class="bio abstract w-richtext">
+              <p>
+                <span class="a">1. 基于VMD和LSTM网络的预测: </span>将输入信号通过VMD变换分解为K个模态分量个数的信号（K为训练参数需初始
+                化），将这些模态分量分别作为预测模型的输入；对于每个分量的预测结果输出经过整合得到最终预测结果。
+              </p>
+              <a href="./datasets.html" class="text-link">view</a>
+            </div>
+          </div>
+          <div class="_40-percent-column message">
+            <div>
+              <img src="./static/images/prediction01.png" alt="" width="500px" height="280px" style="vertical-align: middle;">
+            </div>
+          </div>
+        </div>
+
+        <div class="title-box no-bottom-border"
+             style="margin-bottom: 20px; padding-bottom: 20px; border-bottom-width: 4px; border-bottom-color: #3898EC;">
+        </div>
+
+        <div class="title"
+                 style="font-size: 30px; color: black; font-family: Arial, sans-serif; font-weight: bold;"
+            >Contributing datasets</div>
         <div class="bio abstract w-richtext">
           <p>
-            后续补充，敬请期待
+            OFDB is an on-going community-driven effort and welcomes contribution of datasets from the community.
+            If you are interested, please follow the instructions <a href="./datasets.html" class="text-to">here</a>.
           </p>
         </div>
 
-      </div>
     </div>
   </div>
 
